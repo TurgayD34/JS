@@ -1,0 +1,34 @@
+.page{
+    width: 360px;
+    margin: auto;
+}
+table{
+    background-color: #efefef;
+    border-spacing: 10px;
+    text-align: center;
+}
+table .btn{
+    width: 60px;
+    background-color: gray;
+    line-height: 60px;
+    color: #fff;
+    font-size: 1.5em;
+}
+#process, #index{
+    padding: 5px;
+    text-align: right;
+}
+#index{
+    height: 60px;
+    background-color: #ddfafa;
+    color: #333;
+    font-size: 1.8em;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#process{
+    background-color: #aaa;
+    padding: 10px;
+
+}
