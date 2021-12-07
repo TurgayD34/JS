@@ -1,0 +1,98 @@
+JAVASCRIPT LOOPS
+****************************************************
+Instead of writing:
+text += cars[0] + "<br>";
+text += cars[1] + "<br>";
+text += cars[2] + "<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>";
+
+We can write:
+for (let i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+****************************************************
+Differet Kinds of Loops
+
+-> for ==> Bir kod blogunda dolanir.
+-> for / in ==> Nesne ozellikleri arasinda dolanir.
+-> for / of ==> Yenilenebilir bir nesnenin degerleri arasinda gecis yapar.
+-> while ==> Bellirli bir kosul blogundayken false olana kadar dongu yapar.
+-> do / while ==> True kosulu dogruyken kod blogunda dongu yapar. Ama false hic dongu yapmaz.
+****************************************************
+The for Loops
+
+for(statement 1; statement 2; statement3){
+    Kodlar buraya yazilir.
+}
+Statement 1 i = 0, i = 1 ... ve hangi degerde baslamak istiyorsak onu belirleriz.
+Statement 2 i < 10 kondisyonunu belirler, dongunun kac defa yapilacagini veya uzunlugunu belirler.
+Statement 3 i++ veya i-- kodun ne degerde calismasini 
+****************************************************
+Loop Scope
+
+var kullanimi
+var i = 5;
+for(var i = 0; i < 10; i++){
+    Kod yaz!!!
+}
+==> i burda 10 olur.
+
+let kullanimi
+let i = 5;
+for(let i = 0; i < 10; i++){
+    Kod yaz!!!
+}
+==> i burda 10 olur.
+****************************************************
+For in
+
+for(key in object){
+    Kod yaz!!!
+}
+Ornek:
+const person = {fName = "Turgay", lNAme = "Demir", age = 36};
+let txt = "";
+for(let x in person){
+    txt += person[x];
+    console.log(person[x]);
+    ==> Turgay Demir 36 
+}
+
+* Do not use for in over an Array if the index order is important.
+* It is better to use a for loop, a loop, a  for of loop, or Array.forEach() when the order is important.
+****************************************************
+Array.forEach() ---Incele---
+
+* The forEach() method calls a function (a callback function) once for each array element
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array){
+    txt += value;
+}
+****************************************************
+For of
+
+* The js for of statement loops through the values of an itarable object.
+
+const cars = ["BMW", "Volvo", "Mercedes"];
+let txt = "";
+for(let x of cars){
+    txt += cars;
+    console.log(x);
+}
+****************************************************
+Looping over a String
+
+let lang = "Javascript";
+
+let text = "";
+for(let x of lang){
+    text += x;
+    console.log(text);
+}
+****************************************************
