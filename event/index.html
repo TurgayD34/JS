@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body onload="message();">
+    <div>
+        <h1>Events</h1>
+    </div>
+    <div id="result"></div>
+    <select id="mySelect" onchange="message()">
+        <option>Java</option>
+        <option>Javascript</option>
+        <option>Php</option>
+        <option>C++</option>
+        <option>C##</option>
+    </select>
+    <button type="button" onclick="message();">Click</button>
+    <p id="result" style="width: 1005; height: 100px; border: 1px solid black;" 
+    onmouseover="message();">onMouseOver Events</p>
+    <p id="result" style="width: 1005; height: 100px; border: 1px solid black;" 
+    onmouseout="message();">onMouseOut Events</p>
+    <script src="event.js"></script>
+    <p id="result2" onmouseup="mouseUp();" onmousedown="mouseDown();">Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Voluptatum, odit placeat, reprehenderit reiciendis vel rerum quas aliquid porro error 
+        obcaecati quasi eius possimus dolores nihil necessitatibus earum impedit, cum voluptas dolorum aperiam officia saepe. 
+        Quod voluptates ullam eos pariatur quibusdam possimus natus ad sit atque fugiat explicabo aliquam nisi enim aliquid 
+        excepturi sint dignissimos laborum at, 
+        aspernatur dolore molestias esse officiis! Magnam voluptates amet quibusdam delectus ad nobis qui odit maxime, 
+        eos odio voluptatem totam doloremque sit consectetur vitae illum maiores consequuntur nihil, doloribus commodi? 
+        Corporis provident facilis cum molestiae, fuga quidem adipisci quis quibusdam obcaecati officia quisquam 
+        expedita nostrum!</p>
+    
+    <p onmousemove="mouseMove(event);" style="width: 300px; height: 100px; border: 1px solid black;"></p>
+</body>
+</html>
