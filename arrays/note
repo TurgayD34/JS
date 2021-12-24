@@ -1,0 +1,74 @@
+Array Properties and Methods
+-------------------------------
+* Js arraylarin asil gucu, dilin icine gomulen array ozellik ve methodlarindan alir.
+
+* Bir array 'length' ozelligi, bir array in uzunlugunu (array ogenin sayisini) dondurur.
+
+* Bir array in icinde gecmenin en iyi yolu 'for' dongusunu kullanmaktir.
+
+* Yeni oge, length ozelligi kullanarak da bir array e eklenebilinir.
+
+* Js de arrayler numarali dizinler kullanir. (Nesne ile Array arasinda ki fark)
+
+* Js de nesneler adlandirilmis dizinler kullanir. (Nesne ile Array arasinda ki fark)
+
+* langs[langs.length] = "MySQL"; -> Mesele boyle bir yazilim da ise langs.length kendisi en son index no su olur 
+ve bizim burada eklemek istedigimiz hersey son index e yerlesir.
+
+* Eger yeni bir deger atamak ve bunu da specific bir yer ise su sekilde yapilmasi gerekiyor
+    - langs[12] = "MSSQL";
+    - Note olarak da bazen bir dizinde bir noktaya bir deger atandigi zaman aralarda 'undefined' varsa once onlarin silinmesi 
+    ve daha sonra atamanin yapilmasi daha uygun olur. Bu da Array lar arasinda gezinirken daha rahat olunur.
+
+* Nesneler de new Array olusturmaya gerek yok yaptigimiz sistem onu icin yeterlidir.
+    - let langs = new Array();      => Kotu kullanmaktir
+    - let langs = [];               => Iyi kullanmak
+
+* Soru: Bir degiskenin array olup olmadigini nasil ogrenebilirim?
+    - Bu sorunu cozmek icin ECMAScript 5 yeni bir Array.isArray() methodu tanimlamaktadir.
+    - Bu cozum ile ilgili sorun, eski tarayicilarda ECMAScript 5 in desteklenmemesi
+    - Bu sorunu cozmek icin kendi isArray() fonksiyonunu olusturabilirisiniz. Boylece nesne prototipi "Array" kelimesi iceriyorsa, 
+    true dondurur.
+    - instanceof => documents.getELemanById('result').innerHTML = langs instanceof Array;
+    Burda bize true veya false dondurur.
+
+    + document.getELemanById('result').innerHTML = Array.isArray(langs);
+    => Bu bize true dondurecek.
+    => typeOf una baktigimizda ise bize object dondurecek, bizde biliyoruz ki her array birer objectir.
+
+* Eger kendimiz bir Array fonksiyonu olusturmak istersek:
+    - function isArray(isHave){
+        return isHave.constructor.toString().indexOf("Array") > -1;
+    }
+    document.getElementById('result').innerHTML = isArray(langs);
+
+Array Methods
+---------------
+* Js methodu toString() bir array i (virgulle ayrilmis) array degerlerine donusturur.
+
+* join() methodu ayrica tum array ogelerini bir array a katar. toString() gibi davranir, 
+buna ek olarak ayirici isaretini belirtebilirsiniz.
+    - document.getELemanById('result').innerHTML = langs.join("-");
+    => Neyle ayrilmasini istiyorsaniz onu double quote arasina koymak lazim.
+
+* Array larla calsirken, ogeleri kaldirmak ve yeni oge eklemek kolaydir.
+
+* pop() metodu bir arraydan son ogegi kaldirir. Ve cikarilan degeri geri dondurur.
+
+* push() methodu, bir array a yeni bir oge ekler (tabi sonuna ekler). Ve push() 
+methodu yeni array uzunlugunu dondurur.
+
+* shift() methodu, ilk array ogesini kaldirir ve diger tum ogeleri sola klaydirir.
+
+* unshift() methodu bir array a yeni oge (baslangic kismina) ekler ve eski ogeleri degistirir. 
+Ve yeni array uzunlgunu dondurur.
+
+* Element degistirme nasil saglanir?
+    - 
+
+* delete() kullanarak arraylerde tanimlanmamis delikler birakabilir. Onun yerine pop() veya 
+shift() kullanin.
+
+* Bir array a yeni oge eklemek icin splice() methodu kullanilabilinir. 
+Akilli parametre ayari ile arraylerde delikler birakmadanelemanlari kaldirmak icin splice() 
+kullanilmasi daha iyidir.
