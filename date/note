@@ -1,0 +1,64 @@
+Dates
+-------------
+* Date nesnesi, tarihlerle (yillar, aylar, gunler, dakikalar, saniyeler ve millisaniyeler) calismaniza olanak tanir.
+
+* JS tarihleri string olarak tanimlar
+
+* 15 November 2018 12:27:58 GMT 0300
+    - sayi olarak da tanimlayabiliriz
+
+* Tarihler, 1 january 1970 den (00:00:00) bu yana millisaniye sayisi ile yazilmistir.
+
+* Tarih nesneleri, new Date() constructor ile olusturulur.
+
+* Bir date olusturmanin 4 yolu vardir:
+    - new Date()
+    - new Date(milliseconds)
+    - new Date(dateString)
+    - new Date(year, month, day, minutes, seconds, milliseconds)
+
+* js aylari 0 dan 11 e kadar sayar. Ocak ayi 0 dir ve Aralik ise 11 olur.
+
+* HTML de bir date nesnesi goruntulediginiz de toString() methodu ile otomatik olrak bir string haline donusturebilirsiniz.
+
+* toUTCString() methodu, bir tarihi UTC stringine donusturur (bir tarih gostergesi standardidir).
+
+* toDateString() methodu, bir tarihin daha okunabilir bir bicime donusturulmesini saglar.
+
+* typeOf ile de turunu de inceleyebilinir.
+
+Javascripte Date Formats
+--------------------------
+* Genellikle 4 cesit js tarih giris bicimi vardir.
+    - ISO Date : 2021-11-16 (The International Standard)
+    - Short Date: 16/11/2021
+    - Long Date: Nov 15 2021 or 15 Nov 2021
+    - Full Date: Saturday Nov 15 2021
+
+* ISO bicimi ile js te bir standardini izlemistir. En cok kullanilan sekildir.
+
+* Diger bicimler o kadar tanimlanmamistir, tarayiciya gore degiskenlikler olabilir.
+
+* ISO 8601, tarih ve saat temsili icin uluslararasi standardir.
+
+* ISO 8601, soz dizimi (Year, month, day) tercih edilen js tarih bicimidir.
+    - Tarih ve saat buyur 'T' harfi ile ayrilir.
+    - UTC saatim buyur 'Z' harfi ile tanimlanir.
+    - > 2018-11-15T18:15:00Z seklinde mesela
+
+* Uyari!
+    - Bir tarih-saat string de 'T' veya 'Z' yi atlamak, farkli tarayicilar da farkli sonuclar verebilir.
+
+* Date get Methods, Date set methods
+    - getDate()         => 1 - 31 arasi
+    - getDay()          => 0 - 6 arasi ve haftanin ilk gunu pazar(0) olarak kabul edilir.
+    - getFullYear()
+    - getHours()        => 0 - 23 arasi
+    - getMilliseconds()
+    - getMinutes()
+    - getMonths()           => 0 - 11 arasi
+    - getSeconds()
+    - getTime()         => Zamani al (1 ocak 1970'ten bu yana millisaniye olarak)
+
+    + Get methodu ile set methodu ile arasinda ki fark ise 'set' methodu ile bir degeri degistimemiz de ise yarar, ama 
+    'get' methodu ile kullanici tarafindan cegirilma isine yardimci olur.
