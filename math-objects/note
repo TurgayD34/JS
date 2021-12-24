@@ -1,0 +1,57 @@
+Javascripts Objects
+----------------------
+* Js matematik nesnesi sayilar uzerinde matematiksel islemler yapmaniza izin verir.
+
+* Math.PI 
+    - matematikte ki pi sayisini dondurur.
+
+* Math.round()
+    - Math.round(x), x degisken degerini en yakin tam sayiya yuvarlanmis olarak dondurur.
+    - Burda onemli iki nokta var dikkat edilmesi gereken iki nokta var.
+        - 1 ile 4 arasi asagi yuvarlar
+        - 5 ile 9 arasi ise yukari yuvarklar.
+
+* Math.pow()
+    - Math.pow(x,y), x uzeri y degerini dondurur.
+
+* Math.sqrt()
+    - Math.sqrt(x) x'in karekokunu dondurur.
+    - Burda sqrt anlami 'square root' demektir.
+
+* Math.abs()
+    - Math.abs(x) x'in mutlak (pozitif) degerini dondurur.
+
+* Math.ceil()
+    - Math.ceil(x), x'in degerini en yakin bir ustundeki tam sayiya yuvarlar.
+
+* Math.floor()
+    - Math.floor(x), x'in degerine en yakin bir alttaki tam sayiya yuvarlar.
+
+* Math.sin(), Math.cos()
+    - Math.sin(x), x'in acisindan (radyasyon cinsinden) sinusunu (-1 ile 1 arasinda ki deger) dondurur.
+    - Radyan yerine derece kullanmak isterseniz derece olarak radyana cevirmeniz gerekir.
+        - > Aci radyan = Aci derecesi * PI/ 180
+
+* Math.min(), Math.max()
+    - Parameter listesinde en dusuk veya en yuksek degeri bulmak icin Math.min() ve Math.max() kullanilabilinir.
+
+* Math.random()
+    - Math.random(), 0 (dahil) ile 1 (haric) rastgele bir sayi dondurur.
+    - Eger istegimiz deger virgullu deger alamamak icin hem floor ve random methodu ile birlikte kullanilir.
+    + Math.floor(Math.random() * 10); 
+        -> Burda 0 (dahil) ile 10 (haric) arasinda deger doner.
+    + Math.floor(Math.random() * 10) + 1;
+        -> Burda 0 (dahil) ile 10 (dahil) arasinda deger doner.
+    
+
+* Javascript, Matematik nesnesiyle erisilebilen 8 matematiksel sabit sunmaktadir.
+    - Math.E        => Euler sayisi
+    - Math.PI       => PI degeri
+    - Math.sqrt2    => 2 nin karekoku
+    - Math.sqrt1_2  => 1/2 nin karekoku
+    - Math.LN2      => Logarithma 2
+    - Math.LN10     => Logarithma 10
+    - Math.LOG2E    => E'nin logarithma 2 tabaninda ki degeri
+    - Math.LOG10E   => E'nin logarithma 10 tabaninda ki degeri
+
+* 
