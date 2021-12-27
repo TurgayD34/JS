@@ -1,0 +1,50 @@
+Comparison and Logical Operators
+---------------------------------
+* Karsilastirma ve mantiksal operatorler, dogruyu veya yanlis test etmek icin kullanilir.
+
+* Karsilastirma operatorleri degiskenler veya degerler arasindaki esitligi veya farki saptamak icin mantiksal tablolarda kullanilir.
+
+* Comparison
+    - ==
+    - !=
+    - !==
+    - >
+    - <
+    - <=
+    - >=
+
+Logical Operators
+-------------------
+* Mantiksal operatorler, degiskenler veya degerler arasinda ki mantigi belirlemek icin kullanilir.
+
+* Operatorler
+    - && ve
+    - || veya
+    - ! degil
+
+* variable_name = (condition) ? value1 : value2;
+
+* Iki string i karsilastirirken "alfabetik olarak" 1, 2 den kucuk oldugundan "2", "12" degerinden buyuk olacaktir.
+
+* Dogru sonucu elde etmek icin, degiskenler karsilastirmadan once uygun ture donusturulmustur.
+
+*   true && true = true
+    true && false = false
+    false && true = false
+    false && false = false
+
+*   true || true = true
+    true || false = true
+    false || true = true
+    false || false = false
+----------------------------------
+result = note >= 60 ? Passed : Failed;
+? isaretinin anlami "ise"
+* Bu kisacik kod asagida ki yazilan koda denk geliyor.
+    - Kodu okuyalim: Eger sonuc 60 veya 60 dan yukari 'ise' passed : ama degilse failed olur.
+
+* if(x >= 60){
+    document.getElementById('result').innerHTML = Passed;
+}else{
+    document.getElementById('result').innerHTML = Failed;
+}
