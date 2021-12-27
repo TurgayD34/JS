@@ -1,0 +1,38 @@
+Sorting Array
+----------------
+Array icerisinde sorting yapildigi zaman butun sayilari birbirinden cikarir. Ve daha sonra da cikarsdigi degerlerden en kucuk olani
+ilk siraya yazarak degerlendirme yapar.
+Mesela konuyu soyle inceleyelim: 
+    - 45, 109, 23, 12, 4, 43, 90 elimizde bu array dizini olsun ve biz burda en kucugunden buyugune gore siralarken suna dikkat eder:
+
+    + 45 - 109 = -54
+    + 4 - 109 = -105 
+    Yani bu ikisi icerisinde en kucuk deger 4 olur yani en basa 4 degeri gelir.
+    result : 4, 12, 23, 43, 45, 90, 109 seklinde olusur.
+    Matematikde aslinda bu degerler arasinda en kucugu 4 dur ama js olaya oyle degil az once acikladigim gibi bakar.
+
+---------------------------------
+document.getElementById('result'). innerHTML surekli yazilmaya gerekyoktur ve gina getiriyor.
+
+Onun yerine su sekilde function acip yazilamsi daha uygun olur.
+
+function Show(par1, par2){
+    document.getElementById(par1).innerHTML = par2;
+}
+
+----------------------------------
+* x - y bize kucukten buyuge siralamayi verir.
+    - numbers[0]; Bu da bize min sayiyi verir.
+    - numbers[numbers.length - 1]; max sayiyi verir.
+
+* y - x ise buyukten kucuge siralamayi verir.
+    - numbers[0]; max sayiyi verir.
+
+* Sadece random olarak donmesini istiyorsaniz su sekilde yapilabinir.
+    - return 0.6 - Math.random(); 
+- 0.6 ise herhangi bir decimal deger olmasi yeterlidir. Ben burda 0.6 verdim siz bunu herhangi bir deger verebilirsiniz.
+
+Tabiki max ve min bulma da bu yol fazla tavsiye edilmez bu sadece 8 deger eger bu degerler binleri buldugunda islem yavaslayacaktir.
+Bu sebepden dolayi:
+    - Math.max.apply(null, take);
+    - Math.min.apply(null, take);
