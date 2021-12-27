@@ -1,0 +1,13 @@
+Booleans
+--------------
+* javascript boolean iki degerden birini temsil eder. true veya false
+
+* Genelikle, programlamada yalnizca iki degerden birine sahip olabilecek bir veri turune ihtiyac duyarsaniz:
+    - yes / no
+    - on / off
+    - true / false
+
+* Bunun icin, js bir boolean veri turune sahiptir. Degerleri yalnizca true veya false olabilir.
+
+* Bir ifadenin dogru olup olmadigini ogrenmek icin boolean() fonksiyonunu kullanabilirisniz.
+
