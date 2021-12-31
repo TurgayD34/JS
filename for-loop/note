@@ -1,0 +1,37 @@
+For Loop
+------------
+* Donguler , bir kod blogunu defalarca calistirabilmesi sayesinde vazgecilmezdirler.
+
+* Donguler kullanislidir, ayni kodu tekrar tekrar calistirmak istiyorsaniz, her seferinde farkli bir deger kullanmak zorunda kalirsiniz.
+
+* Js farkli dongu turlerini desteklemektedir.
+    - for
+    - for / in
+    - while
+    - do / while
+
+* for (statement 1; statement 2; statement 3){
+    code block to be executed
+}
+
+* statement 1, dongu (kod blogu) baslamadan once yurutulur.
+
+* statement 2, dongu calistirma kosulunu tanimlar.
+
+* statement 3, dongu (kod blogu) yurutuldukten sonra her defasinda calistirilir.
+
+* length kullandigimiz da bize dizin uzerinden en son index numarasina kadar dongu yapar. Ve eger biz dizine yeni oge 
+ekledigimiz de lamgth de otomatikmen index numarasi degisir.
+
+---------------------------
+Faktoryel Bulma
+
+function faktoriyel(){
+    let take, i, faktor = 1;
+    take = Number(document.getElementById('takeNumber').value);
+    for(i = 1; i <= take; i++){
+        faktor *= i;
+    }
+    document.getElementById('result3').innerHTML = faktor;
+}
+faktoriyel();
