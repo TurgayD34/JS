@@ -1,0 +1,8 @@
+Switch Statement
+--------------------
+* Js bir break anahtarina ulastiginda switch blogundan kopar.
+    - Bu blok icinde daha fazla kod ve durum incelemesi yurutulmesini durdurur.
+
+* Default anahtar kelimesi, hicbir harf eslesmemesi durumunda calistiracak kodu belirtir.
+    - Default durum bir anahtar blogundaki son durum olmak zorunda degildir.
+    - Default anahtar blogundaki son durum degilse varsayilan araligini bir break ile bitirmeyi unutmayin.
