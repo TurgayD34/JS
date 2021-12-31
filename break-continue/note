@@ -1,0 +1,7 @@
+Break - Continue
+---------------------
+* break ifadesi bir donguyu atlamamizi saglar. break ifadesi donguyu keser ve donguden sonra kodu yurutmeye devam eder.
+
+* continue ifades, bir sarti gecmemizi saglar. continue ifadesi dongude bir kodu atlar, belirtilen bir kosul olusursa 
+dongudeki kodu atlayarak devam eder.
+
