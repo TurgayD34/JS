@@ -1,0 +1,49 @@
+body{
+    background-color: #573334;
+    color: #fff;   
+}
+#game{
+    width: 450px;
+    background: #222;
+    padding: 18px;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    margin: 0 0 18px 0;
+    border: solid 1px #fff;
+    padding: 5px;
+    font-weight: 400;
+}
+span{
+    font-size: 125%;
+    padding: 12px;
+}
+#result{
+    width: 100px;
+}
+#answer{
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    width: 100px;
+    margin-left: 20px;
+    background-color: yellowgreen;
+    color: #fff;
+}
+#answer:hover{
+    background-color: #632345;
+}
+#True, #False{
+    font-size: 150%;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+#True{
+    background-color: Green;
+}
+#False{
+    background-color: red;
+    margin-left: 20px;
+}
