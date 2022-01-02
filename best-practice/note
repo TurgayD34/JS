@@ -1,0 +1,43 @@
+Best Practice
+----------------
+* Kacinin!!!
+    - Global degiskenlerden
+    - new anahtar kelimesinden
+    - "==" ifadesinden
+    - eval() fonksiyonundan
+
+* Global degiskenlerin kullanimina en aza indirin.
+    - Buna tum veriler, nesneler ve fonksiyonlarda dahildir.
+
+* Bir fonksiyonda kullanilan tum degiskenler local degisken olarak bildirilmelidir.
+
+* Local degiskenler var, let, const anahtarlari ile bildirilmelidirler aksi takdir de global degisken olurlar.
+    - Bu fonksiyonun icinde degiskenler globaldir.
+        function show(){
+            x, y;
+            return x * y;
+        }
+    - Local degiskenlerdir.
+        function show(){
+            var x, y;
+            return x * y;
+        }
+
+* Tum bildirimleri her komut dosyasinin veya fonksiyonunun en ustune koymak iyi bir kodlama uygulamasidir.
+    - Onlari ilan ettiginizde degiskenleri baslatmak iyi bir kodlama uygulamasidir.
+
+* Her zaman saylari, stringleri veya boolean lari ilkel degerler olarak kullanin. Nesne olarak degil. Bu turleri nesne olarak bildirmek, yurutme
+hizini yavaslatir ve kotu yan etkiler uretir.
+
+* Nesne olustururken new Object(); olarak kullanmayin.
+    - new Object();     yerine      {}
+    - new String();     yerine      "" 
+    - new Number();     yerine      () 
+    - new Boolean();    yerine      false 
+    - new Array();      yerine      [] 
+    - new RegExp();     yerine      /()/
+    - new function();   yerine      (){}
+
+* Sayilarin yanlislikla stringlere veya NaN a donusturulebilecegine dikkat edin.
+
+* Js de veri turleri gevsektir. Bir degisken, farkli veri turleri icerebilir ve bir degisken veri turunu degistirebilir.
