@@ -1,0 +1,49 @@
+& -- AND ->> Her iki biti 1 ise, sonuc biti 1 olarak ayarlar.
+
+| -- OR ->> Iki bitten biri 1 ise, sonuc biti 1'e ayarlar.
+
+^ -- XOR ->> Iki bitten biri 1 digeri 0 oldugunda, sonuc biti 1'e ayarlar.
+
+~ -- NOT ->> Tum bitleri tersine cevirir.
+
+<< -- ZERO FILL LEFT SHIFT ->> Sifirlari sagdan iterek sola kayar ve en soldaki bitlerin dusmesine izin ver.
+
+>> -- SIGNED RIGHT SHIFT ->> En soldaki bitlerin kopyalarini iterek saga kayar ve en sagdaki bitlerin dusmesine izin ver.
+
+>>> -- ZERO FILL RIGHT SHIFT ->> Soldan Sifirlara basarak saga kayar ve en sagdaki bitlerin dusmesine izin ver.
+
+-------------------------------------
+* js, 32 bitlik Bitwise isaretlerini kullaniyor.
+
+* Js sayilari 64 bit kayan nokta sayilari olarak saklar, ancak tum bitwise islemleri 32 bitlik ikili sayilarda gerceklesir.
+
+* En soldaki sayi 0 ise deger + dir. Ama en soldaki deger 1 ise - dir.
+
+-------------------------------------
+Bitwise AND
+Operation       result
+- 0 & 0         0           1111 & 0000    - 0000 - 0
+- 0 & 1         0           1111 & 0001    - 0001 - 1
+- 1 & 0         0           1111 & 0010    - 0010 - 2
+- 1 & 1         1           1111 & 0100    - 0100 - 4
+
+* And opeatorunde eger 0 ile 1 karsilastirildiginda sonuc 0 olur.
+-------------------------------------
+Bitwise OR
+Operation       result
+- 0 | 0         0           1111 | 0000    - 1111
+- 0 | 1         1           1111 | 0001    - 1111
+- 1 | 0         1           1111 | 0010    - 1111
+- 1 | 1         1           1111 | 0100    - 1111
+
+* Or operatorunde eger 0 ile 1 karsilastirildiginda sonuc 1 olur.
+Example:
+- 10 | 5  => 15     0101 | 1010     => 1111 - 15
+                    0101 | 0001     => 0101 - 5
+-------------------------------------
+Bitwise
+- 0 ^ 0         0           1111 ^ 0000    - 1111 - 15
+- 0 ^ 1         1           1111 ^ 0001    - 1110 - 14
+- 1 ^ 0         1           1111 ^ 0010    - 1101 - 13
+- 1 ^ 1         0           1111 ^ 0100    - 1011 - 11
+
