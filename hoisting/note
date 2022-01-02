@@ -1,0 +1,15 @@
+Hoisting
+------------
+* Js te bir degiskeni kullandiktan sonra bildirebilirsiniz.
+    - Diger bir degisle; bir degisken ilan edilmeden once kullanilabilir.
+
+* Simdi soyle bir durum var, eger tanimlamyi asagida da yapabilirsiniz ama atamayi yapamazsiniz.
+    - Bunun calismasinda bir sorun olmaz
+        x = 7;
+        console.log(x);
+        var x;
+    
+    - Ama bunun calismasinda bir sorun olur.
+        x = 7;
+        console.log(x + ": " + y);
+        var x, y = 10;
