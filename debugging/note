@@ -1,0 +1,19 @@
+Debugging
+---------------
+* Programalama kodu, soz dizimi hatalari veya mantiksal hatalar icerebilir. Bu hatalarin bircogunun teshisi zordur.
+
+* Cogu zaman, Programalama kodu hata iceriyorsa, hicbirsey olmayacaktir. Hata mesaji yoktur ve hatalari nereden bulacaginiza dair bir 
+isaret alamazsiniz.
+
+* Kod programalamada hatalari aramak (ve duzeltmek), kod hata ayiklama (debugging) olarak adlandirilir.
+
+* Hata ayiklama kolay degildir. Ancak neyse ki, tum modern tarayicilarda yerlesik bir js hata ayiklayici vardir.
+
+* Dahili hata ayiklacilari acip kapatarak hatalari kullaniciya bildirmeye zorlar.
+
+* Bir hata ayilayici ile, kesme noktalarini (kod yurutmesinin durdurulabilecegi yerler) de ayarlayabilir ve degisken yurutulurken degiskenleri
+inceleyebilirsiniz.
+
+* Tarayiciniz hata ayiklamayi destekliyorsa, hata ayiklayici penceresinden js degerlerini goruntelemek icin console.log() kullanabilirsiniz.
+
+* debugger anahtar kelimesi js in yurutulmesini durdurur ve hata ayiklama fonksiyonu varsa cagirir.
