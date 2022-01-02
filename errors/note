@@ -1,0 +1,62 @@
+Errors - try, catch, throw, finally
+---------------------------------------
+* try ifadesi, bir kod blogunu hatalar icin test etmenize izin verir.
+
+* catch ifadesi hatayi isleme imkani verir.
+
+* throw ifadesi, ozel hatalar olusturmaniza izin verir.
+
+* finally ifadesi, sonuca bakmaksiizn denemek ve yakalamak icin kodu yurutmenize olanak tanir.
+
+* Js kodunu calistirirken farkli hatalar olusabilir.
+
+* Hatalar, programlayici tarafindan yapilan hatalari kodlama, kullanicinin hatali girislerinden kaynaklanan hatalar ve ongorulmeyen
+diger seyler olabilir.
+
+* try ifadesi, yurutulurken hatalar icin test edilecek bir kod blogu tanimlamanizi saglar.
+
+* catch ifadesi, deneme blogunda hata olusursa, yurutulecek bir kod blogu tanimlamanizi saglar.
+
+* try{
+    Block of code to try
+}catch(err){
+    Block of code to handle errors
+}
+
+* Bir hata olustugunda, js normal olarak durdurur ve bir hata mesaji uretir.
+    - Bunu teknik terimi soyledir: JS bir istisna atacaktir (throw an execption)
+    - Js aslinda iki ozellikli bir hata nesnesi olusturacaktir: hata adi ve mesaj
+
+* throw deneyimi, ozel bir hata olusturmaniza izin verir.
+
+* Teknik olarak bir istisna atabilirsiniz (bir hata atin)
+
+* Istisna bir String, Number, Boolean veya Object olabilir.
+
+* Throw ve try ve catch ile birlikte kullanirsaniz, program akisini kontrol edebilir ve ozel hata mesaji olusturabilirsiniz.
+
+* finally ifadesi, sonuca bakilmaksizin, denedikten ve yakaladiktan sonra kodu yurutmenizi saglar.
+
+* * try{
+    Block of code to try
+}catch(err){
+    Block of code to handle errors
+}finally{
+    Block of code to be executed regardless of the try / catch result
+}
+
+* Js, hata olustugunda hata bilgisi saglayan yerlesik bir hata nesnesine sahiptir.
+    - Hata nesnesi iki yararli ozellik sunar: hata adi ve mesaj
+    - Hata adi farkli deger dondurebilir.
+
+Error Name          Description
+- EvalError         Eval() fonksiyonunda bir hata olustugunda
+- RangeError        "Aralik disi" bir sayi olustugunda
+- ReferenceError    Usulsuz bir reference olustugunda
+- SyntaxError       Bir yazim dizim hatasi olustugunda
+- TypeError         Bir tur hata olustugunda
+- URIError          EncodeURI() hatasi olustugunda
+
+* EvalError, Eval() fonksiyonunda bir hatayi gosterir
+
+* Js in daha yeni surumleri herhangi bir EvalError atamaz. Onun yerine SyntaxError kullanin.
