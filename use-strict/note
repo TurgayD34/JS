@@ -1,0 +1,43 @@
+Use Strict
+---------------
+* "use strict" js kodunun "kati modda" yurutulecegini tanimlar.
+
+* Bu bir ifade degildir, ancak js in onceki surumleri tarafindan gormezden gelinen, literal bir ifadedir.
+
+* Strict modda, ornegin bildirilmemis degiskenleri kullanamazsiniz.
+
+* Strict modu destekleyen tarayicilar:
+    - IE version 10
+    - Firefox version 4
+    - Chrome version 13
+    - Safari version 5.1
+    - Opera version 12
+    Bu tarayicilar ve ust versionlar destekleniyorlar.
+
+* "use strict" mod daha guvenli kod yazmayi daha kolay hale getirir.
+
+* Izin verilmez:
+    - Bir degiskenin, nesnenin silinmesine veya fonksiyonun silinemsine izin vermez.
+    - Bir parametre adinin cogaltilmasina izin vermez.
+    - Octal sayisal literallere izin vermez.
+    - Escape (\) karakterine izin vermez.
+    - Salt okunur bir ozelligi silinemesine izin vermez.
+    - Silinmez bir ozelligi silinmesine izin vermez.
+    - eval stringi bir degisken olarak kullanamazsiniz.
+    - Arguments stringi bir degisken olarak kullanilmaz.
+    - with ifadesine izin verilmez.
+    - Guvenlik nedeniyle, eval() fonksiyonun cagrildigi kapsamda degiskenler olusturulmasina izin verilmez.
+
+* Strict modda gelecekteki ayrilmis anahtar kelimelere izin verilmiyor. Yani anlami su ki bunlar variable olarak tanimlamaya izin verilmiyor.
+    - implements
+    - interface
+    - let
+    - package
+    - private
+    - protected
+    - public
+    - static
+    - yield
+
+* UNUTMA!!!
+    - "use strict" yonetgesi yalnizca bir script in veya bir fonksiyonun basinda kabul edilir. Ama 
