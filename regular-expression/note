@@ -1,0 +1,47 @@
+Regular Expressions
+-------------------------
+* Arama deseni, metin arama ve metin degistirme islemleri icin kullanilabilinir.
+
+* Bir metindeki verileri aradiginiz da, aradiginiz seyi aciklamak icin bu arama modelini kullanilabilinir.
+
+* Duzenli bir ifade, tek bir karakter veya daha karmasik bir desen olabilir.
+
+* Duzenli ifadeler her turlu metin arama ve metin degistirme islemlerini gerceklestirmek icin kullanilabilinir.
+
+* /Patterns/ modifiers      ornek var       patt = /Turgay/i;
+
+* i bir degistiricidir (aramayi buyuk kucuk harfe duyarsiz olarak degistirebilir).
+
+* Js'te regular expressions iki string metoduyla siklikla kullanilir.
+    - search()
+    - replace()
+
+-------------------------
+- i     ::> Buyuk / kucuk harf duyarli olmayan eslesme gerceklestirmek.
+- g     ::> Belirtilen metnin tamaminda arama yapilacagini belirtir.
+- m     ::> Birden fazla satirdan olusan metinlerde arama yapmak icin kullanilir.
+
+- [abc]     ::> Koseli parantezler arasindaki karakterlerden herhangi birini bulun.
+- [0-9]     ::> Parantezler arasindaki herhangi bir rakami bulun.
+- (x|y)     ::> Seceneklerden herhangi birini bulun.
+
+- \d        ::> Bir rakami bul
+- \s        ::> Bosluk karakterleri bulun
+- \b        ::> Bir kelimenin basina veya sonunda bir eslesme bulun
+- \uxxxx    ::> Ondalik sayi xxxx ile belirtilen Unicode karakterini bulma
+
+- n+    ::> En az bir n iceren herhangi bir string ile eslesir
+- n*    ::> Sifir veya daha fazla sayida n iceren herhangi bir string ile eslesir
+- n?    ::> Sifirlari veya bir kez n'yi iceren herhangi bir string ile eslesir
+-------------------------
+* Js'te regExp nesnesi onceden tanimlanmis ozelliklere ve methodlara sahip duzenli bir ifade nesnesidir.
+
+* test() metodu, bir regExp ifade metodudur.
+
+* Bir tasarim icin bir string arar ve sonuca bagli olarak dogru veya yanlis dondurur.
+
+* exec() yontemi, bir regExp ifade yontemidir. Belirtilen bir desen icin bir dize arar ve bulunan metni dondurur. Hicbir eslesme bulunmassa 
+null dondurur.
+
+:: document.getElemanById('result').innerHTML = /huk/.test(text);
+:: document.getElemanById('result').innerHTML = /huk/.exec(text);
