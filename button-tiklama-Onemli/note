@@ -1,0 +1,16 @@
+Yani usteki yazdigimiz kodlarin anlami
+    - bir element olusturduk ve bunun adi script
+    <script></script>
+
+    - Sonrada bu actigimiz scripte type ekliyoruz.
+    <script type = "text/javascript"></script>
+
+    - Sonra da ise source ekleyiruz.
+    <script type = "text/javascript" src = "js/mesage.js"></script>
+
+    - Ve bu kodu HTML dosyasinin neresine eklenmesi gerektigini ayarlamamiz lazim. Ve biz burda gitmesi yerin body sonu 
+    oldugunu belirtiyoruz
+    <body>
+    
+    <script type = "text/javascript" src = "js/mesage.js"></script>
+    </body>
