@@ -1,0 +1,14 @@
+JS Timming Events
+--------------------
+* JS zaman araliklarinda yurutulebilir. Buna zamanlama olaylari denir.
+
+* JS ile kullanilacak iki temel metod sunlardir:
+    - setTimeout (fonksiyon millisaniye) : Belirli bir millisaniyede beklendikten sonra bir islevi calistirir.
+    - setInternal (fonksiyon millisaniye) : setTimeout() ile aynidir, ancak fonksiyonun yurutulmesini surekli olarak tekrarlar.
+
+* setTimeout() ve setInterna(), HTML DOM window nesnesinin metodlaridir.
+
+* window.setTimeout() metodu window on eki olmadan yazilabilir.
+    - Ilk parametre, yurutulecek bir islevdir.
+    - Ikinci parametre, yurutmeden once millisaniye sayisini belirler.
+
