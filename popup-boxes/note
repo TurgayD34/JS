@@ -1,0 +1,21 @@
+Javascript Popup Boxes
+-------------------------
+* Js uc tur acilir kutusu vardir:
+    - Uyari kutusu
+    - Onayla kutusu
+    - Komut kutusu
+
+* Bilgilerin kullaniciya geldiginden emin olmak istiyorsaniz cogu zaman bir uyari kutusu kullanilir.
+
+* Kullanicinin bir seyi dogrulamasini veya kabul etmesini isterseniz siklikla onak kutusu kullanilir.
+
+* Bir onay kutusu acildiginda, kullanici devam etmek "Tamam" veya "Iptal" dugmesini tiklayacaktir.
+    - Kullanici "Tamam" basarsa true donmesi lazim
+    - Kullanici "Iptal" basarsa false donmesi lazim
+
+* Kullanicinin bir sayfaya girmeden once bir deger girmesini isterseniz, genellikle bir istem kutusu kullanilir.
+    - Bir istem kutusu yapildiginda kullanicinin devam etmesi icin "Tamam" veya "Iptal" dugmesi tiklanacaktir.
+        + Kullanici "Tamam" i tiklarsa kutu giris degerini dondurur.
+        + Kullanici "iptal" i tiklarsa kutu null degerini dondurur.
+
+* Bir acilan kutu icinde ki satir sonlarini goruntulemek icin, karakterin arkasinda egik cizgi "\n" kullanin.
