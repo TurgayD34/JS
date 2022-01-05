@@ -1,0 +1,29 @@
+Performance
+---------------
+* For dongusu icin:
+    - Not!!!
+        var num = [1,2,3,4,5];
+        for(var i = 0; i < num.length; i++){
+            document.getElementById('result').innerHTML = num[i] + "<br>";
+        }
+    - Good...
+        var num = [1,2,3,4,5];
+        var i, len = num.length;
+        for(i = 0; i < len; i++){
+            document.getElementById('result').innerHTML = num[i] + "<br>";
+        }
+        Butun varible lari onceden tanimla for dongusu icinde tanimlama bu kodun okunusunu hizlandirir.
+
+* document.getElementById('result').innerHTML = num[i] + "<br>";
+    - Bu sekilde tanimlama daha iyi...
+        var result = document.getElementById('result');
+            result.innerHTML = num[3];
+
+* HTML DOM a erismek diger js bildirimlerine kiyasla daha yavas
+
+* Bir DOM uyesine birkac kez ulasmayi dusunuyorsaniz, bir kez erisin ve onu yerel bir degisken olarak kullanin.
+
+* HTML DOM da ki oge sayisini kucuk tutun. Bu ozellikle daha kucuk cihazlardam sayfa yukleme suresini her zaman iyilestirir ve olusturma 
+islemini hizlandirir. (Sayfa goruntuleme)
+        
+    
