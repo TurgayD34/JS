@@ -1,0 +1,80 @@
+Browser Object Model (BOM)
+--------------------------
+* Tarayici nesne modeli (BOM), js tarayici ile konusmasina izin verir.
+    - Standartlari yoktur.
+    - Modern tarayicilar, Js etkilesimligi icin neredeyse ayni yontemi ve ozellikleri uyguladigindan, BOM un yontemleri ve ozellilkleri 
+    olarak adlandirilir.
+
+Window Object
+-------------
+* window nesnesi tum tarayicilar tarafindan desteklenir, tarayicinin penceresini temsil eder.
+
+* Tun genel Js nesneleri, fonksiyonlari ve degiskeneleri otomatik olarak pencere nesnesinin uyesi olur.
+
+* Global degiskenler, window nesnesinin ozellikleridir.
+
+* Global fonksiyonlar ise window nesnesinin metodlaridir.
+
+* (Html DOM) belge nesnesi bile window nesnesinin bir ozelligidir.
+
+Window Size
+-------------
+* Tarayici penceresinin boyurunu belirlemek icin iki ozellik kullanilabilir. Her iki ozellik pixel cinsinden boyutlar dondurur.
+    - window.innerHeight   -> Tarayici penceresinin ic yuksekligi (oixel cinsinden)
+    - window.innerWidth    -> Tarayici penceresinden ic genisligi (pixel cinsinden)
+
+* Not!!! Tarayici penceresine (tarayici goruntusu) arac cubuklari ve kaydirma cubuklari dahil degildir.
+
+* Internet Explorer 8, 7, 6, 5 icin:
+    - document.documentElement.clientHight
+    - document.documentElement.clientWidth
+    - document.body.clientHeight
+    - document.body.clientWidth
+
+* Pencereler:
+    - window.open();    -> Yeni pencere acar
+    - window.close();   -> Pencereyi kapatir
+    - window.moveTo()   -> Pencereyi tasir
+    - window.resizeTo() -> Pencereyi yeniden boyutlandirir
+
+* Javascript Window Screen
+    - window.screen nesnesi, kullanicinin ekraniyla ilgili bilgileri icerir.
+    - window.screen nesnesi, window oneki olmadan yazilabilir.
+        + screen.width          > ziyaretcinin ekran genisligi piksel olarak dondurur.
+        + screen.height         > ziyaretcinin ekran yuksekligini piksel olarak dondurur.
+        + screen.availWidth     > ziyaretcinin ekraninin yuksekligini, Windows gorev cubugu gibi ara yuz ozelliklerini 
+                                piksel cinsinden dondurur.
+        + screen.colorDepth     > bir rengi goruntulemek icin kullanilan bit sayisi dondurur.
+        + screen.pixelDepth     > ekranin piksel yogunlugunu dondurur.
+
+Javascript Window Location
+----------------------------
+* Window.location nesnesi gecerli sayfa adresini (URL) almak ve tarayiciyi yeni bir sayfaya yonlendirmek icin kullanilabilir.
+
+* window.location nesnesi, window oneki olmadan yazilabilir.
+    - window.location.href      > gecerli sayfanin href ini dondurur.
+    - window.location.hostname  > web barindiricinin alan adini dondurur.
+    - window.location.pathname  > gecerli sayfanin yolunu ve dosya adini dondurur.
+    - window.location.protocol  > kullanilan web protokolunu dondurur. (http: veya https:)
+    - window.location.assign    > yeni bir belge yukler.
+
+Window History
+----------------
+* window.history nesnesi tarayicinin gecmisini icerir.
+    - On eki olmadan da yazilabilir.
+
+*   Kullanicilarin gizliligini korumak icin Js bu nesneye nasil erisebilecegi konusunda sinirlamalar vardir. Bazi yontemler:
+    - history.back()    > tarayicida geri tiklama ile ayni
+    - history.forward() > tarayicinin ileri tiklama ile ayni
+
+Window Navigator
+-------------------
+* Window navigator nesnesi, ziyaretcinin tarayicisi hakkinda birgi icerir.
+    - window.appName()          > tarayicinin uygulama adini dondurur
+    - window.appCodeName()      > tarayici ait uygulama kodu adini dondurur
+    - navigator.platform        
+
+* Cerezler etkinse cookieEnabled ozelligi true degerini, aksi halde false degerini dondurur.
+
+
+
