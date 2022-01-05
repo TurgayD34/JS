@@ -1,0 +1,20 @@
+Javascript Validation API
+----------------------------
+* checkValidity(); = Bir input elemani gecerli veri iceriyorsa true degerini dondurur.
+
+* setCustomValisity(); = Bir input elemaninin validation message ozelligini ayarlar.
+---------------
+    Property                    Description
+- validity              -> Bir input elemanin geverliligi ile ilgili boolean ozelliklerini iceriir.
+- validationMessage     -> Gecerlik yanlis oldugunda bir tarayicinin goruntulecegi mesaji icerir.
+- willValidate          -> Bir input elemaninin onaylayip onaylanmayacagini belirtir.
+
+- customError           -> Ozel gecerlilik mesahi ayarlanmissa, true olarak doner.
+- patternMismatch       -> Bir elementin degeri pattern ozniteligiyle eslesmiyorsa, true olarak doner.
+- rangeOverflow         -> Bir elementin degeri max ozniteliginden buyukse, true olarak doner.
+- rangeUnderflow        -> Bir elementin degeri min ozniteliginden kucukse, true olarak doner.
+- stepMismatch          -> Bir elementin degeri, adim ozniteligi basina gecersiz ise, true olarak doner.
+- tooLong               -> Bir elementin degeri maxLength ozniteligini asarsa, true olarak doner.
+- typeMismatch          -> Bir elementin degeri, type ozniteligine gore basarisiz ise, true olarak doner.
+- valueMissing          -> (required nitelikli) bir ogenin degeri yoksam true olarak donecek.
+- valid                 -> Bir elementin degeri dogrulanir ise, true olarak doner.
