@@ -1,0 +1,140 @@
+JSON
+---------
+* JSON, veri toplamak ve tasimak icin kullanilan bir formattir.
+
+* JSON, bir sunucudan bir web sayfasina veri gonderdiginde siklikla kullanilir.
+
+* JSON nedir?
+    - JSON, js uygulamalari icin olusturulmus bir veri formatidir. JSON (JavaScript Object Notation) kisaltilmasidir. 
+    JSON cikis amaci veri transferinde verilen XML den daha az yer kaplamasi saglanmaktadir. Su an sadece JS 
+    uygulamalarinda degil, yazilim gelistirmede kullanilan bir cok teknolojide JSON formatindaki veriler tercih 
+    edilmektedir.
+        + Java uygulamalari
+        + Net uygulamalari
+        + PHP uygulamalari
+        + Web servis uygulamalari
+        + Mobil uygulamalarin veri transferleri
+    gibi bir cok noktada veriler JSON formatinda kullanilmaktadir.
+
+* JSON bicimi sozdizimsel olarak Javascript nesneleri olusturma kodu ile aynidir.
+    - Bu benzerlik nedeni ile bir Js programi JSON verilerini dogal JS nesnelerine kolayca donusturebilir.
+
+* JSON Snytax Rules:
+    - Veri adi / deger ciftlerinde tutulur.
+    - Veri virgullerle ayrilir.
+    - Suslu parantezler nesneleri tutar.
+    - Koseli ayraclar dizini tutuyor.
+    - JSON nesneleri suslu parantez icinde yazilmistir.
+    - Js te oldugu gibi, nesneler birden fazla ad / deger cifti icerbilir.
+
+Nesneler    {firstName: "Node", lastName: "Js"};
+JSON        {"firstName": "Node", "lastName": "Js"}
+
+JSON Dizisi
+    var txt= "
+    {"langs":[
+        {"firstName": "Node", "lastName": "Js"},
+        {"firstName": "React", "lastName": "Js"},
+        {"firstName": "Vue", "lastName": "Js"},
+        {"firstName": "Abgular", "lastName": "Js"}
+    ]}
+------------------------------------------------------
+Kendi Arastirmalarim
+--------------------
+* JSON nedir?
+    - Hafif bir veri degisim formatidir.
+    - Js nesne gosteriminde yazilmis duz bir metindir.
+    - Bilgisayarlar arasinda veri gondermek icin kullanilir.
+    - Dilden bagimsizdir.
+    - Okuma ve olusturma kodu bircok programlama dilinde mevcuttur.
+
+* Neden JSON kullanilir?
+    - JSON verilerini kolayca JS nesnelerine donusturebilir.
+    - Bicim yalnizca metin oldugundan bilgisayarlar arasinda kolayca gonderilebilir, ve herhangi bir programalama dili 
+    tarafindan kullanilabilir.
+    - Iki tane kullanimi vardir:
+        + JSON.parse();
+        + JSON.stringify();
+
+* JSON XML gibidir:
+    - Hem JSON, hem de XML kendini tanimlar. (Okuyucu tarafindan okunabilinir)
+    - Hem JSON, hem de XML hiyerarsikdir. (Degerler icindeki degeler)
+    - Hem JSON, hem de XML bircok programlama dili tarafindan ayristirilabilir ve kullanilabilir.
+    - Hem JSON, hem de XML bir XMLHttpRequest ile alinabilir.
+
+* JSON XML ayni gibi degildir:
+    - JSON bitis etiketi kullanmaz.
+    - JSON daha kisa
+    - JSON okumak ve icin daha hizlidir.
+    - JSON dizileri kullanabilir.
+
+* Ornekleri:
+    - JSON:
+        +   {"employees":[
+                { "firstName":"John", "lastName":"Doe" },
+                { "firstName":"Anna", "lastName":"Smith" },
+                { "firstName":"Peter", "lastName":"Jones" }
+            ]}
+    - XML:
+        +   <employees>
+                <employee>
+                    <firstName>John</firstName> <lastName>Doe</lastName>
+                </employee>
+                <employee>
+                    <firstName>Anna</firstName> <lastName>Smith</lastName>
+                </employee>
+                <employee>
+                    <firstName>Peter</firstName> <lastName>Jones</lastName>
+                </employee>
+            </employees>
+    
+* var name = JSON.parse(data); -- Parse
+    - JSON'un yayfin bir kullanimi, bir web sunucusuna / sunucudan veri alisverisi yapmakdir.
+    - Bir web sunucusundan veri alirken, verileri her zaman bir dizedir.
+    - Verileri ile ayristirin ve verileri JSON.parse() bir JS nesnesi haline getirir.
+
+    +   const text = '["Ford", "BMW", "Audi", "Fiat"]';
+        const myArr = JSON.parse(text);
+
+    +   const text = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}';
+        const obj = JSON.parse(text);
+        obj.age = eval("(" + obj.age + ")");
+        document.getElementById("demo").innerHTML = obj.name + ", " + obj.age(); 
+
+* var name = JSON.stringify(data); -- Stringify
+    - JSON'un yayfin bir kullanimi, bir web sunucusuna / sunucudan veri alisverisi yapmakdir.
+    - Bir web sunucusundan veri alirken, verileri her zaman bir dizedir.
+    - Js nesnesini bir dizeye donusturun. JSON.stringify();
+
+    +   const obj = {name: "John", age: 30, city: "New York"};
+        const myJSON = JSON.stringify(obj);
+
+    +   - Storing data: (Veri Depolama)
+        const myObj = {name: "John", age: 31, city: "New York"};
+        const myJSON = JSON.stringify(myObj);
+        localStorage.setItem("testJSON", myJSON);
+
+        - Retrieving data: (Veri Alma)
+        let text = localStorage.getItem("testJSON");
+        let obj = JSON.parse(text);
+        document.getElementById("demo").innerHTML = obj.name;
+
+* JSON Object
+    - Nokta (.) kullanarak nesne degerlerine erisebilirsiniz:
+        +   const myJSON = '{"name":"John", "age":30, "car":null}';
+            const myObj = JSON.parse(myJSON);
+            document.getElementById("demo").innerHTML = myObj.name;
+    
+    - Koseli ayrac [] kullanarak da nesne degerlerine erisebilirsiniz:
+        +   const myJSON = '{"name":"John", "age":30, "car":null}';
+            const myObj = JSON.parse(myJSON);
+            document.getElementById("demo").innerHTML = myObj["name"];
+
+    - for-in dongusu ile nesne ozellikleri arasinda dolasabilirsiniz:
+        +   const myJSON = '{"name":"John", "age":30, "car":null}';
+            const myObj = JSON.parse(myJSON);
+
+            let text = "";
+            for (const x in myObj) {
+            text += x + ", ";
+            }
