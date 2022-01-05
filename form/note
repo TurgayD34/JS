@@ -1,0 +1,34 @@
+Form
+-------
+* valueForm = document.forms[0].length;
+    - Burda valueForm elemanin uzunlugunu bulur.
+
+* valueForm = document.forms[0].username.value;
+    - valueForm elemaninin id si username olan input un valuesuna ulas.
+
+* Burda surekli forms[0] yazilmaktansa form un name sini de ekleyebiliriz.
+    -     valueForm = document.formBegin.pass.value;
+
+Form Validation
+----------------
+* HTML formu dogrulama Javascript ile yapilabilir.
+
+* Bir form alani (name) bossa, bu iletiyi uyarir ve formun gonderilmesini engellemek icin false dondurur.
+    - name bossa, required ozelligi bu formun gonderilmesini engeller (Ie9 ve oncesinden calismaz)
+
+* Javascript genellikle sayisal girdiyi dogrulamak icin kullanilir.
+
+* Veri dogrulama, kullanici girdisinin temiz dogru ve yararli olmasini saglayan islemdir.
+
+* Tipik dogrulama gorevleri sunlardir:
+    - Kullanici gerekli tum alanlari doldurdu mu?
+    - Kullanici gecerli bir tarih girdi mi?
+    - Kullanici sayisal bir alanda metin girdi mi?
+
+* Cogu zaman, veri dogrulama amaci dogru kullanici girisi saglamaktir.
+
+* Dogrulama, bir cok farkli yontemlerle tanimlanabilinir ve bircok farkli sekilde dagitilabilir.
+
+* Sunucu tarafi dogrulamasi, sunucuya bir giris gonderildikten sonra bir web sunucusu tarafindan gerceklestirildi.
+
+* Islemci tarafindan dogrulama, girdi bir web sunucusuna gonderilmeden once bir web tarayicisi tarafindan gerceklestirildi.
