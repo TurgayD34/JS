@@ -1,0 +1,41 @@
+Functions Definations
+-----------------------
+* Javascript fonksiyonlari function anahtari sozcuguyle tanimlanir.
+
+* function functionName(parameters){
+    code to be executed
+}
+
+* Bildirilen fonksiyonlar hemen yurutulmez. Bunlar "daha sonra kullanilmak uzere kaydedilir) ve daha sonra 
+cagrildiklarinda yurutuleceklerdir.
+
+* Bir fonksiyon ifadesi bir degiskende saklanabilir.
+
+* Javascript fonksiyonlari bildirmeden once cagrilabilir.
+
+* fonksiyon ifadeleri kendini cagirabilir.
+
+* Javascript deki typeof isleci fonksiyonlar icin "function" dondurur. Ancak, Javascript fonksiyonlari en iyi nesneler 
+olarak tanimlanabilir.
+
+* Javascript fonksiyonlari hem ozelliklere hemde metodlara sahipdir.
+
+* arguments.length ozelligi, fonksiyon cagirildiginda alinan bagimsiz degisken sayisini dondurur.
+
+* toString metodu fonksiyonu bir string olarak dondurur.
+
+Functions Parameters
+---------------------
+* functionName(par1, par2, par3,.....){
+    code to be executed
+}
+
+* Fonksiyon parametreleri, fonksiyon taniminda listelenen isimlerdir.
+
+* Fonksiyon argumanlari, fonksiyona gecirilen gercek degerlerdir.
+
+* Javascript fonksiyon tanimlari, parametreler icin veri turlerini belirtmez.
+
+* Javascript fonksiyonlari aktarilan bagimsiz degiskenlerde tur denetimi gerceklestirilmez.
+
+* Javascript fonksiyonlari, alinan bagimsiz degiskenlerin sayisini kontrol etmez.
