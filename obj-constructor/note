@@ -1,0 +1,22 @@
+Objects
+-----------
+* Javascript te nerdeyse hersey nesnedir.
+    - Boolean nesne olabilir (new anahtar kelime ile tanimlanirsa)
+    - Sayilar nesne olabilir (new anahtar kelime ile tanimlanirsa)
+    - Stringler nesne olabilir (new anahtar kelime ile tanimlanirsa)
+    - Tarihler herzaman nesnedir
+    - Matematik herzaman nesnedir
+    - Duzenli ifadeler herzaman nesnedir
+    - Arraylar herzaman nesnedir
+    - Fonksiyonlar herzaman nesnedir
+
+* Ilkel tanimlamalar disindaki tum Javascript degerleri nesnedir.
+
+Primitives
+--------------
+* Ilkel bir deger, herhangi bir ozellik veya yontem icermeyen bir degerdir.
+
+* Ilkel bir veri turu, ilkel bir degere sahiptir.
+
+* Javascript, ilkel veri turlerinin 5 tipini tanimlar.
+
