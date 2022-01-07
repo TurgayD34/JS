@@ -1,0 +1,16 @@
+Function Call and Apply
+-------------------------
+* call() metodu onceden tanimlanmis bir javascript fonksiyon metodudur.
+    - call() ile baska bir nesneye ait bir metodu kullanilabilir.
+
+* Ilk nesne argumani (parametre) olarak bir kullanici nesnesini cagirmak icin kullanilabilir.
+
+* apply() metodu call() metodu benzer.
+
+* Tek farki:
+    - call() fonksiyonu bagimsiz degiskenleri ayri ayri alabilir.
+    - apply() herhangi bir fonksiyon argumanini bir dizi olarak alir.
+
+* Bir arguman listesi yerine bir dizi kullanmak istiyorsaniz apply() metodu cok kullanislidir.
+
+* Bir sayi listesinde ki en buyuk numarayi almak istiyorsaniz, Math.max() metodunu kullanilabilirsiniz.
