@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM ile Nesnelere Ulasma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <p id="result"></p>
+        <p><a href="#" name="lang1" class="page-link">javascript</a></p>
+        <p><a href="#" name="lang2" class="page-link">JQUERY</a></p>
+        <p><a href="#" name="lang3" class="page-link">Angular JS</a></p>
+        <p><a href="#" name="lang4" class="page-link">React JS</a></p>
+        <form action="" id="frmDom" name="frmDom">
+            <div class="form-group">
+                <label for="txt1">Value 1</label>
+                <input type="text" name="txt1" id="txt1" value="Node" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="txt2" class="mt-4">Value 2</label>
+                <input type="text" name="txt2" id="txt2" value="Js" class="form-control">
+            </div>
+        </form>
+        <button type="button" class="btn btn-danger mt-4" onclick="javascript:getDOM()">Click</button>
+    </div>
+
+    <p id="changeCss" class="mt-5">Istanbul dunyanin en guzel sehirlerinden bir tanesidir...</p>
+    <button type="button" class="btn btn-dark mt-2" onclick="javascript:changeCSS()">Change</button>
+    
+    <script src="html-dom2.js"></script>
+</body>
+</html>

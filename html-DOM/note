@@ -1,0 +1,100 @@
+HTML DOM (Document Object Model)
+---------------------------------
+* Nesne modeli ile javascript, dinamik HTML olusturmak icin ihtiyac duydugu gucu alir.
+    - Javascript sayfadaki tum HTML ogelerini degistirebilir.
+    - Javascript sayfadaki tum HTML niteliklerini degistirebilir.
+    - Javascript sayfadaki tum CSS stillerini degistirebilir.
+    - Javascript mevcut HTML ogelerini ve niteliklerini kaldirabilir.
+    - Javascript yeni HTML ogeleri ve nitelikleri ekleyebilir.
+    - Javascript sayfadaki tum mevcut HTML olaylarina tepki gosterebilir.
+    - Javascript sayfada yeni HTML olaylarina olusturabilir.
+
+* DOM bir W3C (World Wide Web Consortium) standardidir.
+
+* DOM belgelere erismek icin bir standart tanimlar.
+
+* W3C Belge Nesnesi Modeli (DOM), programlarin ve komut dizilerinin bir belgenin icerigini, yapisini ve stilini dinamik olarak 
+esrismesini ve guncellemesini saglayan bir platform.
+
+* W3C DOM standardi, 3 farkli kisma ayrilmistir:
+    - Cekirdek DOM - tum belge turleri icin standart model
+    - XML DOM - XML belgeler icin standart model
+    - HTML DOM - HTML ogelerini almanin, degistirmenin, eklemenin veya silmenin standart'idir.
+
+HTML DOM Methods
+-------------------
+* HTML DOM'a javascript ile (ve diger programlama dilleriyle) erisebilir. DOM da, tum HTML elementleri nesneler olarak tanimlanir.
+
+* Bir ozellik, alabileceginiz veya ayarlayabileceginiz bir degerdir (bir HTML elementinin icerigini degistirme gibi)
+
+* Bir metod, yapabileceginiz bir islemdir (bir HTML elementi ekleme veya silme gibi)
+-----------------------
+* Bir HTML ogesine erismenin en yaygin yolu, elementin kimligini kullanmaktir.
+
+* Bir elementin icerigini almanin en kolay yolu innerHTML ozelligini kullanmaktir.
+
+* InnerHTML ozelligi, HTML ogelerinin icerigini almak veya degistirmek icin kullanislidir.
+
+HTML DOM Documents
+--------------------
+* HTML DOM dokuman nesnesi, web sayfanizda ki diger tum nesnelerin sahibidir.
+
+*  Dokuman nesnesi, web sayfanizi temsil eder.
+
+* Bir HTML sayfasinda ki herhangi bir ogeye erismek istiyorsaniz, daima dokument nesnesine erismekle baslarsiniz.
+------------------
++ <div id="result">Bu bir paragraf</div>
++ document.getElementById('result').innerHTML = `Javascript HTML DOM araciligi ile bir seyler degistirildi`;
+------------------
+HTML Elemenlari Bulma
+---------------------
+- document.getElementById(id)            ::> Element kimligi ile bir element bulma
+- document.getElementByTagName(name)     ::> Elemanlari etiket adina gore bulma
+- document.getElementByClassName(name)   ::> Elemanlari sinif adina gore bulma
+
+HTML Elemanlarini Degistirme
+----------------------------
+- element.innerHTML = new html content      ::> Bir HTML elementin icini degistirme
+- element.attribute = new value             ::> HTML ogesinin oznitellik degerini degistirme
+- element.setAttribute(attribute,value)     ::> HTML ogesinin oznitellik degerini degistirme
+- element.style.property = new style        ::> HTML ogesinin stilini degistirme
+
+Eleman Ekleme ve Silme
+------------------------
+- document.createElement(element)       ::> HTML ogesini olusturma
+- document.removeChild(element)         ::> HTML ogesini kaldirma
+- document.appendChild(element)         ::> HTML ogesini ekleme
+- document.replaceChild(element)        ::> Bir HTML ogesini degistirin
+- document.write(text)                  ::> HTML ciktisini yazar
+
+Olay Isleyicilere Ekleme
+-------------------------
+- document.getElementById(id).onclick = function(){code}       ::> Elemente tiklandiginda gerceklesecek olay
+
+HTML Nesne Bulma
+----------------
+- document.anchors          ::> Bir name oznitelligine sahip tum <a> ogelerini dondurur.
+- document.applets          ::> Tum <applet> ogelerini dondurur (HTML5'te kullandan kaldirilmistir).
+- document.baseURI          ::> Dokumanin mutlak taban URI;sini dondurur.
+- document.body             ::> <Body> elementini dondurur.
+- document.cookie           ::> Dokumanin cerezini dondurur.
+- document.doctype          ::> Belgenin doctype'ini dondurur.
+- document.documentElement  ::> <html> elementini dondurur.
+- document.documentMode     ::> Tarayici tarafindan kullanilan modu dondurur.
+- document.documentURI      ::> Dokumanin URI'sini dondurur.
+- document.domain           ::> Sunucundaki belgenin alan adini dondurur.
+- document.domConfig        ::> Eski. DOM yapilanmasini dondurur.
+- document.embeds           ::> Tum <embed> elementlerini dondurur.
+- document.forms            ::> Tum <form> elementlerini dondurur.
+- document.head             ::> <head> elementini dondurur.
+- document.images           ::> Tum <img> elementlerini dondurur.
+- document.implementation   ::> DOM uygulamasini dondurur.
+- document.InputEncoding    ::> Belgenin karakter kodlamasini dondurur (karakter kumesi)
+- document.lastModified     ::> Belgenin guncellendigi tarihi ve saati dondurur.
+- document.links            ::> Href oznitelikli tum <area> ve <a> elemanlarini dondurur.
+- document.readyState       ::> Dokumanin (yukleme) durumunu dondurur.
+- document.referrer         ::> Yonlendirenin URI'sini (baglanti belgesi) dondurur.
+- document.scripts          ::> Tum <scripts> elementlerini dondurur.
+- document.strictErrorChecking  ::> Hata kontrolu uygulaniyorsa doner.
+- document.title            ::> <title> elementini dondurur.
+- document.URL              ::> Dokumanin tam URL'sini dondurur.
