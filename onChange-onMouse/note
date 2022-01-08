@@ -1,0 +1,10 @@
+Events
+---------
+* onChange olayi genellikle giris alanlarinin gecerliligi ile birlikte kullanilir.
+
+* onmouseover ve onmouseout olaylari , kullanici bir HTML ogesinin uzerine geldiginde veya bir HTML ogesinin disina ciktiginda 
+bir fonksiyonu tetiklemek icin kullanilabilir.
+
+* onmousedown, onmouseup ve onclick etkinlikleri fare tiklamasinin tum parcalaridir. Once fare dugmesi tiklandiginda onmousedown olayi
+tetiklenir, ardindan fare dugmesi birakildiginda onmouseup olayi tetiklenir, nihayet fare tiklanmasi tamamlandiginda onclick 
+olayi tetiklenir.
