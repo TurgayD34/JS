@@ -1,0 +1,38 @@
+DOM EventListener
+--------------------
+* addEventListener() metodu, belirtilen elemente bir event handler (olay isleyici) ekler.
+
+* Bir ogeye bircok event handler ekleyebilirsiniz.
+
+* Yalnizca HTML ogelerini degil herhangi bir DOM nesnesine olay dinleyicisi ekleyebilirsiniz. Mesela window nesnesi.
+
+* addEventListener() metodunu kullinirken, javascript daha iyi okunabilirlik saglamak icin HTML bicimlendirmesinden ayrilir ve HTML bicimlendirilmesini kontrol etmediginizde bile olay dinleyicileri eklemenize izin verir.
+
+* removeEventListener() metodunu kullanarak bir olay dinleyicisini kolayca kaldirabilirsiniz.
+
+* element.addEventListener(event, function, useCapture);
+
+* Ilk parametre, etkinligin turudur ("click" veya "mousedown" gibi)
+
+* Ikinci parametre, olay meydana geldiginde aramak istedigimiz fonksiyondur.
+
+* Ucuncu parametre, olay kabarcigi veya olay yakalamayi kullanip kullanmayacagini belirten bir boolean degeridir. 
+Bu parametre istege baglidir.
+
+* addEventListener() metodu, varolan olaylarin uzerine yazilmadan ayni ogeye bircok olay eklemanize izin verir.
+
+* Ayni elemente farkli turdeki olaylari ekleyebilirsiniz.
+
+* addEventListener() metodu, HTML ogeleri, HTML belgesi, window nesnesi veya olaylari destekleyen xmlHttipRequest nesnesi gibi
+herhangi bir HTML DOM nesnesine olay dinleyicileri eklemenize izin verir.
+
+* Olaylar iki asamali olarak ele alinir: yakalama ve kabarciklanma. Yakalama asamasi sirasinda olaylar, nesne hiyerasisinde daha kucuk
+olan olay hedeflerine gonderilmeden once ust nesnelere gonderilir. Kabarciklanma asamasinda, ilk once hedef ogeler ve daha sonra ust 
+ogelere olaylar gonderilir. Her iki olay asamasinda da olay isleyicileri kaydedebilirsiniz.
+
+* true Yakalama asamasi icin olay isleyicisini kaydedin.
+
+* false Kabarciklanma evresi icin olay isleyicisini kaydedin.
+
+-----------------
+* 
