@@ -1,0 +1,25 @@
+DOM EventListener
+-------------------
+* Event Bubbling or Event Cupture? (Olay kabarciklanma veya olay yakalama?)
+
+* HTML DOM da kabarciklanma ve yakalama islemlerinde iki tur olay yayilimi vardir.
+
+* Olay yayilimi, bir olay olustugunda oge sirasini tanimlamanin bir yoludur. Bir <div> ogesinde bir <p> ogesi varsa ve kullanici
+<p> ogesine tiklanirsa, hangi ogenin "tiklama" olayinin oncellikle ele alinmasi gerekir?
+
+* Kabarciklanma sirasinda ic ogenin olayi once islenir ve daha sonra dis oge islenir: <p> ogesinin tiklama olayi once islenir, 
+ardindan <div> ogesinin tiklama olayi islenir.
+
+* Ogenin yakalanmasinda oncellikle <div> ogesinin tiklama olayi islenir, ardindan <p> ogesinin tiklama olayi ele alinir.
+
+* addEventListener() metodu ile "useCapture" parametresini kullanarak yayilim turunu belirleyebilirsiniz.
+
+* Varsayilan deger, kabarciklanma yayilimini kullanacak false'dur.
+
+* removeEventListener() metodu, addEventListener() metodu ile eklenen olay isleyicilerini kaldirir.
+---------------------
+* IE8 ve onceki surumlerinde ile Opera 6.0 ve onceki surumlerinde addEventListener() ve removeEventListener() yontemleri desteklenmez.
+Bununla birlikte, bu belirli tarayici surumleri icin ogeye bir olay isleyicisi eklemek icin attachEvent() metodunu ve onu kaldirmak icin
+detachEvent() metodunu kullanabilirsiniz.
+    > element.attachEvent(event, function);
+    > element.detachEvent(event, function);
