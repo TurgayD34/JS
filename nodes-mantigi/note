@@ -1,0 +1,64 @@
+HTML DOM Navigation ------ /Ders 98/
+----------------------
+* HTML DOM ile, dugum iliskilerini kullanarak dugum aracinda gezinebilirsiniz.
+
+* W3C HTML DOM standardina gore, bir HTML belgesindeki hersey bir dugumdur:
+    - Tum belgeler bir belge dugumudur.
+    - Her HTML ogesi bir oge dugumudur.
+    - HTML ogelerinde ki metin, metin dugumleridir.
+    - Her HTML ozniteligi bir ozellik dugumudur.
+    - Tum yorumlar aciklama dugumleridir.
+
+* HTML DOM ile, dugum agacinda ki tum dugumlere Javascript ile erisilebilir.
+
+* Yeni dugumler olusturabilir ve tum dugumler degistirilebilir veya silinebilir.
+
+Relationships
+-----------------
+* Dugum agacinda ki dugumler birbiriyle hiyerarsik bir iliski iceriyor.
+
+* Iliskileri tanimlamak icin ebeveyn, cocuk ve kardes (parentm child and sibling) terimleri kullanilir.
+
+* Bir dugum agacinda, en ust dugume kok dugum denir.
+
+* Her dugumun hicbir ust ogesi olmayan kok dugum haric tam olarak bir ust dugumu vardir.
+
+* Bir dugum birkac cocuk (child) sahibi olabilir.
+
+* Kardesler (sibling) ayni ebebevyne sahip dugumler.
+
+Nodes Arasinda Gezinme
+-----------------------
+* Javascript ile dugumler arasinda gezinmek icin asagida ki dugum ozelliklerini kullanabilirsiniz:
+    - parentNode
+    - childNode[nodoNumber]
+    - firstChild
+    - lastChild
+    - nextSibling
+    - previousSibling
+
+Child Node and Node Values
+----------------------------
+* Uyari!!! DOM islmesinde genel bir hata, bir element dugumunun metin icermesini beklemektedir. <title> oge dugumu (yukarida ornekte)
+metin icermiyor. "DOM tutorial" degerine sahip bir metin dugumu iceriyor.
+
+* Metin dugumunun degerine, dugumun innerHTML ozelligi tarafindan erisebilir.
+
+* innerHTML ozelligine erismek, ilk cocugun nodeValue suna erismekle aynidir.
+
+* Tum belgeye erisime izin veren iki ozel ozellik vardir:
+    - document.body     +> Dokuman govdesi
+    - document.documentElement      +> Tam belge
+
+The nodeName Property
+-----------------------
+* NodeName ozelligi, bir dugumun adini belirtir.
+
+*   - nodeName salt okunur niteliktedir.
+    - Bir oge dugumunun nodeName ogesi, etiket adiyla ayni nodeName bir oznitelik dugumunun oznitelik adidir.
+    - Bir metin dugumunun nodeName her zaman #text olur.
+    - Belge dugumunun nodeName her zaman #document
+
+* nodeName her zaman bir HTML ogesinin adini buyuk harflerle verir.
+
+* NodeName ozelligi, bir dugumun degerini belirtir.
