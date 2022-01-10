@@ -1,0 +1,20 @@
+DOM Elements (Nodes)
+________________________
+
+Yeni HTML Ogeleri Olusturma
+-----------------------------
+* HTML DOM a yeni bir oge eklemek icin oncellikle ogeyi (Oge dugumunu) olusturup mevcut bir ogeye eklemelisiniz.
+
+* appendChild() metodu yeni elementi ust elementin son cocugu olarak eklendi. Bunu istemiyorsaniz, insertBefore() metodunu 
+kullanabilirsiniz.
+
+* Bir HTML ogesini kaldirmak icin ogenin ust ogesini bilmeniz gerekir.
+
+* node.remove() metodu, DOM 4 belitiminde uygulanir. fakat zayif tarayici destegi yuzunden bunu kullanmamalisiniz.
+
+* Eleman ebeveynini bulmadan bir ogeyi kaldirmak guzel olurdu. Ama malesef DOM hrm kaldirmak istediginiz ogeyi hem de ust ogesini
+bilmelisiniz.
+
+* Iste ortak bir gecici cozum: Kaldirmak istediginiz cocugu bulun ve ust ogeyi bulmak icin parentNode ozelligini kullanin.
+
+* Bir elementi HTML DOM'la degistirmek icin replaceChild() metodunu kullanin.
