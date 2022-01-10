@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container-fluid mt-3" id="parentDiv">
+        <p><img src="img/Tilki.png" alt="Tilki" id="img" width="100" height="100"></p>
+        Burda sadece img olmasina gerek baska neler yapmak istiyorsaniz onu kullanabilirsiniz. Yazi olabilir 
+        <button type="button" onclick="javascript:hideShow()" class="btn btn-light">Hide and Show</button>
+    </div> -->
+    <div class="container-fluid mt-3">
+        <p><input id="comment" type="text" class="form-control" style="display: none;"></p>
+        <a href="#" onclick="javascript:hide()" class="btn btn-success">Yorum yap</a>
+        <a href="#" onclick="javascript:show()" class="btn btn-danger">Iptal et</a>
+
+    </div>
+    <script src="hide-show.js"></script>
+</body>
+</html>
