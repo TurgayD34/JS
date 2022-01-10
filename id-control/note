@@ -1,0 +1,10 @@
+TC Kimlik No Kurallari
+------------------------
+* TC kimlik no, 11 haneli rakamlardan olusmak zorundadir.
+
+* Ilk rakam 0 olamaz.
+
+* 1,3,5,7,8 hanelerinin toplaminin 7 kati ile 2,4,6,8 hanelerinin toplami cikartilir, sonucun 10'a bolumunden kalani 10.
+haneyi verir.
+
+* ilk 10 hanenin toplaminin 10'a bolumunden kalan 11. haneyi verir.
